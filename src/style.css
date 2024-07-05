@@ -1,0 +1,5 @@
+/* src/styles.css */
+.bg-gradient-to-top {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  }
+  
