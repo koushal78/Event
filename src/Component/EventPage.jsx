@@ -1,29 +1,25 @@
-// src/EventPage.jsx
-import React from 'react';
-import Nav from './Nav';
+import React from 'react'
+import Nav from './Nav'
 
-const EventPage = ({ event }) => {
+export default function EventPage() {
   return (
-    <div className='bg-custom-gradient h-[100%]'>
+    <div className='bg-custom-gradient '>
       <Nav/>
+      <div className='flex justify-center items-center h-[calc(100vh-72px)] py-4 '>
+      <div className='h-full w-[600px] border-2 border-black rounded-lg shadow-lg shadow-indigo-500'>
+        <img className='h-[250px] rounded-lg w-full' src="sports.jpg" alt="" />
+         <p className='text-bold  text-2xl ml-2 my-2 '>Title:<span className='text-indigo-500'>Sport Management</span> </p>
+         <p className='text-bold  text-2xl ml-2 my-2 '>Date:<span className='text-indigo-500'>25/12/2024</span> </p>
+         <p className='text-bold  text-2xl ml-2 my-2 '>Venue:<span className='text-indigo-500'>collage Ground</span> </p>
+         <p className='text-bold  text-2xl ml-2 my-2 '>Description: <span className='text-indigo-500'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, natus dignissimos ad expedita qui architecto vel eius. Nisi, nulla dolor?</span> </p>
+       <div className='text-center mt-8'>
 
-    <div className="max-w-2xl mx-auto p-4 my-2 bg-white shadow-lg shadow-black rounded-md">
-      <img className='w-[600px] h-[400px]' src="" alt="" />
-      <h1 className="text-3xl font-bold mb-4">{event.title}</h1>
-      <p className="text-gray-700 mb-2"><strong>Date:</strong> {event.date}</p>
-      <p className="text-gray-700 mb-2"><strong>Time:</strong> {event.time}</p>
-      <p className="text-gray-700 mb-2"><strong>Location:</strong> {event.location}</p>
-      <p className="text-gray-700 mb-4"><strong>Description:</strong> {event.description}</p>
-      <button
-        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
-        onClick={() => alert('Apply button clicked!')}
-      >
-        Apply
-      </button>
+       <button className='w-40 bg-indigo-900 text-white h-10 rounded-md font-medium my-2'>Apply</button>
+       </div>
+      </div>
+
+      </div>
+      
     </div>
-
-    </div>
-  );
-};
-
-export default EventPage;
+  )
+}

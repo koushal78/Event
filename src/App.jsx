@@ -5,6 +5,7 @@ import Login from './Component/Login';
 import Registration from './Component/Registration';
 import Events_Page from './Component/Events_Page';
 import EventPage from './Component/EventPage';
+import Home from './Component/Home';
 const eventDetails = {
   title: 'College Tech Fest 2024',
   date: '2024-09-15',
@@ -19,12 +20,12 @@ const App = () => {
     <Router>
       <Routes>
 
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/Registration" element={<Registration/>} />
         <Route path='/club' element={<Events_Page/>}/>
         <Route path='/Events' element={ <EventPage event={eventDetails} />}/>
-        <Route path='/Explor' element={<EventPage/>}/>
+        <Route path='/Explore' element={<EventPage/>}/>
       </Routes>
     </Router>
   );
